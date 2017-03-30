@@ -6,7 +6,7 @@ echo "Downloading...";
 git clone https://github.com/vapor/toolbox vapor-toolbox > /dev/null 2>&1;
 cd vapor-toolbox;
 
-TOOLBOXTAG=$(git describe --tags);
+TOOLBOXTAG="1.0.8"; # TODO: Make this dynamic again when Vapor 2.0.0 is released
 git checkout $TOOLBOXTAG > /dev/null 2>&1;
 rm -rf .swift-version
 
